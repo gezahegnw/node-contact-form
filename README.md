@@ -18,4 +18,7 @@ npm install
 
 ```bash
 node app
+
 ```
+## heroku deployed 
+https://protected-lowlands-60053.herokuapp.com/
