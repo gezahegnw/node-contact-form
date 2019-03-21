@@ -38,7 +38,8 @@ app.post('/send', (req, res) => {
   `;
  
 
-
+//client ID "387725189600-a6ef6mkl5p9j43nie1gdtfualpsp4h5o.apps.googleusercontent.com"
+//clinet secret "2EZSTGBfJwnqfB9bgrsQM5tW"
   // create reusable transporter object using the default SMTP transport
   let transporter = nodemailer.createTransport({
     // host: 'smpt.gmail.com',
@@ -71,7 +72,8 @@ app.post('/send', (req, res) => {
       console.log('Message sent: %s', info.messageId);   
       console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
 
-      res.render('contact', {msg:'Email has been sent'});
+      //res.render('contact', {msg:'Email successfully sent!'});
+      res.render("contact", { emailSent: true });
   });
   });
 
