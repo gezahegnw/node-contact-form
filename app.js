@@ -36,10 +36,6 @@ app.post('/send', (req, res) => {
     <h3>Message</h3>
     <p>${req.body.message}</p>
   `;
- 
-
-//client ID "387725189600-a6ef6mkl5p9j43nie1gdtfualpsp4h5o.apps.googleusercontent.com"
-//clinet secret "2EZSTGBfJwnqfB9bgrsQM5tW"
   // create reusable transporter object using the default SMTP transport
   let transporter = nodemailer.createTransport({
     // host: 'smpt.gmail.com',
