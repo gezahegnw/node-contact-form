@@ -3,7 +3,7 @@
 }
 
 body{
-  background-image: url("/public/images/3.jpg"); /* The image used */
+  background-image: url("/public/images/2.jpg"); /* The image used */
     background-color: #cccccc; /* Used if the image is unavailable */
     height: auto; /* You must set a specified height */
     background-repeat: no-repeat; /* Do not repeat the image */
@@ -13,7 +13,7 @@ body{
 }
 
 .container{
-  max-width: 70%;
+  max-width: 50%;
   margin-left:auto;
   margin-right:auto;
   padding:1em;
@@ -113,4 +113,38 @@ ul{
   .company-info h3, .company-info ul, .brand{
     text-align: left;
   }
+ 
+}
+@media screen and (max-width: 600px) {
+  body{
+    background-image: url("/public/images/1.jpg"); /* The image used */
+      background-color: #cccccc; /* Used if the image is unavailable */
+      height: auto; /* You must set a specified height */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding:1em;
+  }
+  .container{
+    max-width: 100% !important;
+    margin-left:auto;
+    margin-right:auto;
+    padding:1em;
+    margin-top: 50px;
+  }
+  h3 {
+    text-align: center;
+  }
+  /* .wrapper{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .wrapper > *{
+    padding:2em;
+  }
+
+  .company-info h3, .company-info ul, .brand{
+    text-align: left;
+  } */
 }
